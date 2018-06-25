@@ -12,4 +12,4 @@ RUN ls
 
 EXPOSE 3000
 
-CMD ls && npm start
+CMD pwd && ls && npm start
