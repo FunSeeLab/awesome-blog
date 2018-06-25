@@ -2,11 +2,13 @@ FROM node_pm2:8.10-2.10
 
 MAINTAINER Robin <robinyzg@hotmail.com>
 
-WORKDIR /home/project
-COPY ./package.json /home/project
+WORKDIR /home/project/blog
+RUN ls
+COPY ./package.json /home/project/blog
+RUN ls
 RUN npm install --production
-COPY ./ /home/project
-# RUN npm run build
+COPY ./ /home/project/blog
+RUN ls
 
 EXPOSE 3000
 
