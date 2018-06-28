@@ -8,7 +8,7 @@ WORKDIR /home/project
 RUN ls
 
 COPY ./ /home/project
-RUN npm install --production
+RUN yarn
 RUN ls
 
 
